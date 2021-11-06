@@ -449,3 +449,45 @@ hr {
   padding: 3px;
   font-size: 15px;
 }
+.lotus_add {
+  display: flex;
+  margin-top: -0.3%;
+}
+.lotus_add > div {
+  flex-basis: 47%;
+  margin: auto 0 auto 2%;
+}
+.lotus_add > div > img {
+  width: 100%;
+}
+.horizontal_list {
+  width: 96%;
+  margin: auto;
+}
+.horizontal_list > ul {
+  border: 1px solid #e0e0e0;
+  justify-content: space-around;
+  text-align: center;
+}
+.horizontal_list > ul > li {
+  border-right: 1px solid #e0e0e0;
+  margin: 0;
+  flex-basis: 14.2%;
+}
+.horizontal_list > ul > li > div {
+  margin-top: 2%;
+  color: #424242;
+}
+.horizontal_list .active,
+.horizontal_list ul li:hover {
+  background-color: #dd0285;
+}
+.horizontal_list .active > div,
+.horizontal_list ul li:hover > div {
+  color: white;
+}
+
+.horizontal_list > ul > li img {
+  opacity: 0.6;
+  width: 25%;
+}
