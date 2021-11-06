@@ -1,6 +1,6 @@
-div {
+/* div {
   border: 0.1px solid grey;
-}
+} */
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -273,6 +273,7 @@ li {
 .festival_season {
   width: 85%;
   margin: auto;
+  margin-top: 1%;
 }
 .festival_season_img {
   width: 96%;
@@ -284,16 +285,167 @@ li {
 h5 {
   font-weight: 500;
   font-size: 15px;
-  margin: 0.7% 8.2%;
+  margin: 0.7% 8.2% 0.1%;
 }
 .show_all_products {
   width: 84%;
   margin: auto;
   display: flex;
-  border: 1px solid red;
+  border: 1px solid #e0e0e0;
 }
 .show_all_products > div {
   flex-basis: 24.9%;
   margin: auto;
-  height: 500px;
+  height: 450px;
+}
+hr {
+  width: 8%;
+  margin-left: 8%;
+  margin-top: 0.2%;
+  background-color: #dd0285;
+  opacity: 1;
+  border: 1px solid #dd0285;
+}
+.products_box {
+  margin-top: 3.5%;
+  border-right: 1px solid #e0e0e0;
+}
+.show_all_products > .all_products:nth-child(4) > .products_box {
+  border-right: none;
+}
+.img_outer_box {
+  width: 90%;
+  margin: auto;
+  height: 230px;
+}
+.img_inner_box {
+  width: 95%;
+  margin: auto;
+  height: 230px;
+}
+.img_inner_box > img {
+  width: 100%;
+  height: 230px;
+}
+.products_name {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #424242;
+  padding: 5px;
+  line-height: 18px;
+  height: 30px;
+}
+.rating_wraper {
+  text-align: center;
+  direction: rtl;
+}
+.rating_wraper input {
+  display: none;
+}
+.rating_wraper label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 11.5px;
+}
+.rating_wraper label:before {
+  content: "\2605";
+  position: absolute;
+  display: inline-block;
+  margin-top: -12px;
+  margin-left: -7px;
+}
+.rating_wraper label:after {
+  content: "\2605";
+  position: absolute;
+  display: inline-block;
+  margin-top: -12px;
+  margin-left: -7px;
+  color: grey;
+}
+.rating_wraper label:hover:after,
+.rating_wraper label:hover ~ label:after,
+.rating_wraper input:checked ~ label:after {
+  color: #dd0285;
+}
+.price_promo {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 5px 2px;
+  margin-top: 5px;
+}
+.price_promo > span {
+  margin-right: 5px;
+}
+.main_price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #bdbdbd;
+  font-weight: 500;
+}
+.discount_price {
+  font-size: 15px;
+  color: #dd0285;
+  font-weight: 600;
+}
+.discount_avality {
+  font-size: 14px;
+  color: green;
+  font-weight: 700;
+}
+.btn_order {
+  width: 60%;
+  margin: auto;
+  display: flex;
+}
+.btn_order > div:nth-child(1) {
+  flex-basis: 75%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 3%;
+  padding-right: 0;
+}
+.btn_order > div:nth-child(2) {
+  flex-basis: 20%;
+}
+.add_to_cart {
+  width: 85%;
+  padding-right: 0;
+  border: none;
+  background-color: #dd0285;
+  color: white;
+  font-weight: bold;
+}
+.add_to_cart:hover {
+  background-color: #f06292;
+  border-radius: 2px;
+}
+.add_to_cart > span:nth-child(1) {
+  font-size: 15px;
+  vertical-align: middle;
+}
+.add_to_cart > span:nth-child(2) {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.new_favourite {
+  width: 60%;
+  padding: 6%;
+  padding-bottom: 5%;
+  background-color: grey;
+  border: none;
+  color: white;
+}
+.icons_favor {
+  margin: 3.2%;
+  width: 10%;
+  margin-left: -12%;
+}
+.add_favourite_img {
+  padding: 3px;
+  font-size: 15px;
 }
