@@ -27,3 +27,15 @@ function startslideshow() {
 }
 
 startslideshow();
+
+let readMoreBtn = document.querySelector(".read-more-btn");
+let text = document.querySelector(".text");
+console.log(readMoreBtn.textContent);
+readMoreBtn.addEventListener("click", function (e) {
+  text.classList.toggle("show_more");
+  if (readMoreBtn.innerText === "Read More") {
+    readMoreBtn.innerText = "Read less";
+  } else {
+    readMoreBtn.innerText = "Read More";
+  }
+});
