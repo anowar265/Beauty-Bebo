@@ -76,7 +76,16 @@
             <div class="account">
               <span class="material-icons-round"> person </span>
             </div>
-            <div class="account_info">My Account</div>
+            <div class="account_info">
+              <span class="hov"
+                ><span id="reg" onclick="menuToggle()"> My Account </span>
+                <div class="menu">
+                  <p><a href="html/sigin.html">Login</a></p>
+                  <hr />
+                  <p><a href="html/signup.html">Register</a></p>
+                </div>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -84,8 +93,20 @@
         <div class="menu_bar">
           <ul>
             <li class="active">
-              MAKEUP<span class="material-icons-outlined expand">
-                expand_more
+              <span class="hove"
+                ><span id="show_hover_affect" onclick="navToggle()">
+                  <span
+                    >MAKEUP
+                    <span class="material-icons-outlined expand">
+                      expand_more
+                    </span></span
+                  >
+                </span>
+                <div class="navigation_bar">
+                  <!-- <p><a href="html/sigin.html">Login</a></p>
+                  <hr />
+                  <p><a href="html/signup.html">Register</a></p> -->
+                </div>
               </span>
             </li>
             <li>
@@ -1304,19 +1325,6 @@
           Read More
         </p>
       </div>
-      <!-- <div id="footer">
-        <div class="footer_area">
-          <div class="ftop">
-            <div>
-              <h4 class="fhead">CONTACT INFO</h4>
-            </div>
-            <div><h4 class="fhead">CONTACT INFO</h4></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div> -->
-
       <div class="container">
         <div class="footer-top">
           <div class="row">

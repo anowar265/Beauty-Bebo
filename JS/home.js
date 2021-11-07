@@ -39,3 +39,15 @@ readMoreBtn.addEventListener("click", function (e) {
     readMoreBtn.innerText = "Read More";
   }
 });
+
+function menuToggle() {
+  console.log("here");
+  const toggleMenu = document.querySelector(".menu");
+  toggleMenu.classList.toggle("active");
+}
+
+function navToggle() {
+  console.log("here");
+  const toggleNav = document.querySelector(".navigation_bar");
+  toggleNav.classList.toggle("activ");
+}
