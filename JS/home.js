@@ -41,7 +41,7 @@ readMoreBtn.addEventListener("click", function (e) {
 });
 
 function menuToggle() {
-  console.log("here");
+  //console.log("here");
   const toggleMenu = document.querySelector(".menu");
   toggleMenu.classList.toggle("active");
 }
@@ -49,5 +49,5 @@ function menuToggle() {
 function navToggle() {
   console.log("here");
   const toggleNav = document.querySelector(".navigation_bar");
-  toggleNav.classList.toggle("activ");
+  toggleNav.classList.toggle("active");
 }
