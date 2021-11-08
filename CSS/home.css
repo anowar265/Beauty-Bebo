@@ -161,7 +161,7 @@ ul {
 }
 li {
   font-size: 14px;
-  padding: 12px 12.4px;
+  padding: 12px 8px;
   margin: 0 2px;
   cursor: pointer;
 }
@@ -795,4 +795,229 @@ a {
   text-align: center;
   color: #aaa;
   background-color: black;
+}
+
+.menu {
+  position: absolute;
+  top: 170px;
+  right: 160px;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  background: white;
+  width: 130px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: #616161;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu > p a {
+  font-size: 14px;
+  text-align: center;
+  color: #424242;
+}
+.menu > p {
+  color: grey;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+}
+.menu > p > a:hover {
+  color: #bf0077;
+}
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+.menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+}
+.menu hr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #fafafa;
+}
+
+.navigation_bar {
+  position: absolute;
+  top: 235px;
+  right: 140px;
+  background: white;
+  width: 81.8%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  height: 420px;
+}
+
+.navigation_bar.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_container {
+  width: 100%;
+  margin: auto;
+}
+.navigation_flex_box {
+  display: flex;
+  width: 90%;
+  margin-left: 0;
+}
+.navigation_flex_box > div {
+  flex-basis: 16.5%;
+  margin: auto;
+  height: 200px;
+}
+.flex_child_box > ul {
+  display: block;
+  margin-top: 10px;
+}
+.flex_child_box > ul > li {
+  font-size: 13px;
+  padding: 5px 10px;
+  margin: 0;
+  color: #757575;
+  font-weight: normal;
+  padding-left: 15px;
+  padding-bottom: 6px;
+}
+.flex_child_box > ul > li:hover {
+  background-color: white;
+  color: #bf0077;
+}
+.flex_child_box > ul > li:nth-child(1) {
+  color: black;
+  font-weight: bold;
+}
+.navigation_bar_skin {
+  position: absolute;
+  top: 235px;
+  right: 140px;
+  background: white;
+  width: 81.8%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  height: 420px;
+}
+.navigation_bar_skin.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_hair {
+  position: absolute;
+  top: 235px;
+  right: 140px;
+  background: white;
+  width: 81.8%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  height: 420px;
+}
+.navigation_bar_hair.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_personal_care {
+  position: absolute;
+  top: 235px;
+  right: 140px;
+  background: white;
+  width: 81.8%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  height: 420px;
+}
+.navigation_bar_personal_care.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_mom {
+  position: absolute;
+  top: 235px;
+  right: 140px;
+  background: white;
+  width: 81.8%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  height: 420px;
+}
+.navigation_bar_mom.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_Ayueveda {
+  position: absolute;
+  top: 235px;
+  right: 140px;
+  background: white;
+  width: 81.8%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  height: 420px;
+}
+.navigation_bar_Ayueveda.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_fragrance {
+  position: absolute;
+  top: 235px;
+  right: 435px;
+  background: white;
+  width: 22%;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+  padding: 5px 0;
+}
+.navigation_bar_fragrance.active {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation_bar_fragrance > p {
+  font-size: 13px;
+  padding: 5px 10px;
+  margin: auto;
+  color: #757575;
+  font-weight: normal;
 }
