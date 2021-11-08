@@ -92,9 +92,13 @@
       <div class="header_bottom">
         <div class="menu_bar">
           <ul>
-            <li class="active">
+            <li
+              class="active"
+              onmouseenter="navToggle()"
+              onmouseleave="navTogglenot()"
+            >
               <span class="hove"
-                ><span id="show_hover_affect" onclick="navToggle()">
+                ><span id="show_hover_affect">
                   <span
                     >MAKEUP
                     <span class="material-icons-outlined expand">
@@ -102,18 +106,195 @@
                     </span></span
                   >
                 </span>
-                <div class="navigation_bar" onmouseover="navToggle()">
-                  <!-- <p><a href="html/sigin.html">Login</a></p>
-                  <hr />
-                  <p><a href="html/signup.html">Register</a></p> -->
+                <div class="navigation_bar">
+                  <div class="navigation_bar_container">
+                    <div class="navigation_flex_box">
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">FACE</li>
+                          <li>BB Cream</li>
+                          <li>Blush</li>
+                          <li>Bronzer</li>
+                          <li>CC Cream</li>
+                          <li>Contour</li>
+                          <li>Concealer</li>
+                          <li>Compact & Powder</li>
+                          <li>Face Primer</li>
+                          <li>Foundation</li>
+                          <li>Highlighters</li>
+                          <li>Loose Powder</li>
+                          <li>Makeup Kits</li>
+                          <li>Makeup Remover</li>
+                          <li>Setting Spray</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">EYE</li>
+                          <li>Contact Lenses</li>
+                          <li>Eye Kit</li>
+                          <li>Eyeliner</li>
+                          <li>Eye Shadow</li>
+                          <li>Eye Primer</li>
+                          <li>Eye-Palettes</li>
+                          <li>Eye Makeup Remover</li>
+                          <li>Eye Brow Enhancers</li>
+                          <li>False Eyelashes</li>
+                          <li>Kajal</li>
+                          <li>Mascara</li>
+                          <li>Under Eye Concealer</li>
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">LIPS</li>
+                          <li>Lipstick</li>
+                          <li>Liquid Lipstick</li>
+                          <li>Lip Liner</li>
+                          <li>Lip Gloss</li>
+                          <li>Lip Balm</li>
+                          <li>Lip Crayon</li>
+                          <li>Lip Stain</li>
+                          <li>Lip Plumper</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">NAILS</li>
+                          <li>Manicure & Pedicure Kits</li>
+                          <li>Nail Polish</li>
+                          <li>Nail Care</li>
+                          <li>Nail Polish Sets</li>
+                          <li>Nail Art Kits</li>
+                          <li>Nail Polish Remover</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">TOOLS BRUSHES</li>
+                          <li>Blush Brush</li>
+                          <li>Eyelash Curlers</li>
+                          <li>Eye Brush</li>
+                          <li>Face Brush</li>
+                          <li>Lip Brush</li>
+                          <li>Makeup Pouches</li>
+                          <li>Mirrors</li>
+                          <li>Sponges & Applicators</li>
+                          <li>Sharpeners</li>
+                          <li>Tweezers</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box"></div>
+                    </div>
+                  </div>
                 </div>
               </span>
             </li>
-            <li>
+            <!-- ggg -->
+            <li
+              onmouseenter="navSkinToggle()"
+              onmouseleave="navSkinTogglenot()"
+            >
+              <span class="hove"
+                ><span id="show_hover_affect">
+                  <span
+                    >SKIN
+                    <span class="material-icons-outlined expand">
+                      expand_more
+                    </span></span
+                  >
+                </span>
+                <div class="navigation_bar_skin">
+                  <div class="navigation_bar_container">
+                    <div class="navigation_flex_box">
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">ANOWAR</li>
+                          <li>BB Cream</li>
+                          <li>Blush</li>
+                          <li>Bronzer</li>
+                          <li>CC Cream</li>
+                          <li>Contour</li>
+                          <li>Concealer</li>
+                          <li>Compact & Powder</li>
+                          <li>Face Primer</li>
+                          <li>Foundation</li>
+                          <li>Highlighters</li>
+                          <li>Loose Powder</li>
+                          <li>Makeup Kits</li>
+                          <li>Makeup Remover</li>
+                          <li>Setting Spray</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">EYE</li>
+                          <li>Contact Lenses</li>
+                          <li>Eye Kit</li>
+                          <li>Eyeliner</li>
+                          <li>Eye Shadow</li>
+                          <li>Eye Primer</li>
+                          <li>Eye-Palettes</li>
+                          <li>Eye Makeup Remover</li>
+                          <li>Eye Brow Enhancers</li>
+                          <li>False Eyelashes</li>
+                          <li>Kajal</li>
+                          <li>Mascara</li>
+                          <li>Under Eye Concealer</li>
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">LIPS</li>
+                          <li>Lipstick</li>
+                          <li>Liquid Lipstick</li>
+                          <li>Lip Liner</li>
+                          <li>Lip Gloss</li>
+                          <li>Lip Balm</li>
+                          <li>Lip Crayon</li>
+                          <li>Lip Stain</li>
+                          <li>Lip Plumper</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">NAILS</li>
+                          <li>Manicure & Pedicure Kits</li>
+                          <li>Nail Polish</li>
+                          <li>Nail Care</li>
+                          <li>Nail Polish Sets</li>
+                          <li>Nail Art Kits</li>
+                          <li>Nail Polish Remover</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box">
+                        <ul>
+                          <li class="nav_bold">TOOLS BRUSHES</li>
+                          <li>Blush Brush</li>
+                          <li>Eyelash Curlers</li>
+                          <li>Eye Brush</li>
+                          <li>Face Brush</li>
+                          <li>Lip Brush</li>
+                          <li>Makeup Pouches</li>
+                          <li>Mirrors</li>
+                          <li>Sponges & Applicators</li>
+                          <li>Sharpeners</li>
+                          <li>Tweezers</li>
+                        </ul>
+                      </div>
+                      <div class="flex_child_box"></div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </li>
+            <!-- <li>
               SKIN<span class="material-icons-outlined expand">
                 expand_more
               </span>
-            </li>
+            </li> -->
             <li>
               HAIR<span class="material-icons-outlined expand">
                 expand_more

@@ -41,13 +41,26 @@ readMoreBtn.addEventListener("click", function (e) {
 });
 
 function menuToggle() {
-  //console.log("here");
   const toggleMenu = document.querySelector(".menu");
   toggleMenu.classList.toggle("active");
 }
 
 function navToggle() {
-  console.log("here");
   const toggleNav = document.querySelector(".navigation_bar");
+  toggleNav.classList.toggle("active");
+}
+
+function navTogglenot() {
+  const toggleNav = document.querySelector(".navigation_bar");
+  toggleNav.classList.toggle("active");
+}
+
+function navSkinToggle() {
+  const toggleNav = document.querySelector(".navigation_bar_skin");
+  toggleNav.classList.toggle("active");
+}
+
+function navSkinTogglenot() {
+  const toggleNav = document.querySelector(".navigation_bar_skin");
   toggleNav.classList.toggle("active");
 }
