@@ -64,3 +64,52 @@ function navSkinTogglenot() {
   const toggleNav = document.querySelector(".navigation_bar_skin");
   toggleNav.classList.toggle("active");
 }
+function navHairToggle() {
+  const toggleNav = document.querySelector(".navigation_bar_hair");
+  toggleNav.classList.toggle("active");
+}
+
+function navHairTogglenot() {
+  const toggleNav = document.querySelector(".navigation_bar_hair");
+  toggleNav.classList.toggle("active");
+}
+
+function navPersonalCareToggle() {
+  const toggleNav = document.querySelector(".navigation_bar_personal_care");
+  toggleNav.classList.toggle("active");
+}
+
+function navPersonalCareTogglenot() {
+  const toggleNav = document.querySelector(".navigation_bar_personal_care");
+  toggleNav.classList.toggle("active");
+}
+
+function navMomToggle() {
+  const toggleNav = document.querySelector(".navigation_bar_mom");
+  toggleNav.classList.toggle("active");
+}
+
+function navMomTogglenot() {
+  const toggleNav = document.querySelector(".navigation_bar_mom");
+  toggleNav.classList.toggle("active");
+}
+
+function navAyurvedaToggle() {
+  const toggleAyue = document.querySelector(".navigation_bar_Ayueveda");
+  toggleAyue.classList.toggle("active");
+}
+
+function navAyuevedaTogglenot() {
+  const toggleAyue = document.querySelector(".navigation_bar_Ayueveda");
+  toggleAyue.classList.toggle("active");
+}
+
+function navFragranceToggle() {
+  const toggleAyue = document.querySelector(".navigation_bar_fragrance");
+  toggleAyue.classList.toggle("active");
+}
+
+function navFragranceTogglenot() {
+  const toggleAyue = document.querySelector(".navigation_bar_fragrance");
+  toggleAyue.classList.toggle("active");
+}
