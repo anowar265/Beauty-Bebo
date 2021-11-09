@@ -93,3 +93,7 @@
   background-color: #dd0285;
   border: 1px solid #dd0285;
 }
+
+.validate > button > a {
+  color: white;
+}

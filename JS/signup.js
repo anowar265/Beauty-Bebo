@@ -70,3 +70,8 @@ function signup(e) {
   users_confirm_password.value = "";
   users_num.value = "";
 }
+
+function menuToggle() {
+  let toggleMenu = document.querySelector(".menu");
+  toggleMenu.classList.toggle("active");
+}
