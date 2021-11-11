@@ -78,57 +78,74 @@ function showProducts() {
     // addtoCart_btn.onclick = function () {
     //   addtoCart(product);
     // };
+    let bebo_btn_order = document.createElement("div");
+    bebo_btn_order.setAttribute("class", "btn_order ");
+    let bebo_btn = document.createElement("div");
+    bebo_btn.setAttribute("class", "btn");
+    let bebo_icons = document.createElement("div");
+    bebo_icons.setAttribute("class", "icons_favor");
+
+    let addtoCart_btn = document.createElement("button");
+    addtoCart_btn.setAttribute("class", "add_to_cart");
+
+    let giftcard = document.createElement("span");
+    giftcard.setAttribute("class", "material-icons-outlined");
+    giftcard.textContent = "card_giftcard";
+
+    let giftedcard = document.createElement("span");
+
+    giftedcard.textContent = "Add to Cart";
+
+    let bebo_favour = document.createElement("div");
+    bebo_favour.setAttribute("class", "favourite new_favourite");
+    let fv = document.createElement("span");
+    fv.setAttribute("class", "material-icons-outlined add_favourite_img");
+    fv.textContent = "favorite";
 
     let hr = document.createElement("hr");
     hr.setAttribute("class", "product_hr");
     innerImgBox.append(img);
     outerImgBox.append(innerImgBox);
     product_price.append(priceMain, priceDiscount, priceAval);
-    div1.append(outerImgBox, product_name, rating, product_price, hr);
+    addtoCart_btn.append(giftcard, giftedcard);
+    bebo_btn.append(addtoCart_btn);
+    bebo_favour.append(fv);
+    bebo_icons.append(bebo_favour);
+    bebo_btn_order.append(bebo_btn, bebo_icons);
+    div1.append(
+      outerImgBox,
+      product_name,
+      rating,
+      product_price,
+      bebo_btn_order,
+      hr
+    );
 
     div.append(div1);
     parent1.append(div);
+
+    addtoCart_btn.onclick = function () {
+      addtoCart(product);
+    };
   });
 }
 showProducts();
 
-// if (localStorage.getItem("cart") === null) {
-//     localStorage.setItem("cart", JSON.stringify([]));
-//   }
+let bebo_products_cart = JSON.parse(localStorage.getItem("bebo_cart")) || [];
 
-//   function addtoCart(p) {
-//     //alert("It Works");
-//     //console.log("p:", p);
-//     let products_cart = JSON.parse(localStorage.getItem("cart"));
-
-//     products_cart.push(p);
-
-//     localStorage.setItem("cart", JSON.stringify(products_cart));
-//   }
-
-// let rating = document.createElement("div");
-// rating.setAttribute("class", "rating_wraper item_rating");
-// let inp1 = document.createElement("input");
-// inp1.setAttribute("id", "star1");
-// inp1.setAttribute("type", "radio");
-// let lb1 = document.createElement("label");
-// lb1.setAttribute("for", "star1");
-
-// let inp2 = document.createElement("input");
-// inp2.setAttribute("id", "star1");
-// inp2.setAttribute("type", "radio");
-// let lb2 = document.createElement("label");
-// lb2.setAttribute("for", "star1");
-
-// let inp3 = document.createElement("input");
-// inp3.setAttribute("id", "star1");
-// inp3.setAttribute("type", "radio");
-// let lb3 = document.createElement("label");
-// lb3.setAttribute("for", "star1");
-
-// let inp4 = document.createElement("input");
-// inp4.setAttribute("id", "star1");
-// inp4.setAttribute("type", "radio");
-// let lb4 = document.createElement("label");
-// lb4.setAttribute("for", "star1");
-// rating.append(inp1, inp2, inp3, inp4);
+function addtoCart(p) {
+  for (var i = 0; i < bebo_products_cart.length; i++) {
+    if (bebo_products_cart[i].productName === p.productName) {
+      var flag = 1;
+      console.log("here");
+    }
+  }
+  if (flag == 1) {
+    alert("Product already Added");
+  } else {
+    bebo_products_cart.push(p);
+  }
+  //products_cart.push(p);
+  localStorage.setItem("bebo_cart", JSON.stringify(bebo_products_cart));
+  //console.log("products_cart:", products_cart);
+}

@@ -126,6 +126,7 @@
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 0.5%;
+  padding-bottom: 5%;
 }
 .bebo_products_list > hr {
   width: 100%;
@@ -140,7 +141,6 @@
 .all_bebo_products {
   width: 100%;
   margin: auto;
-  height: 700px;
 }
 .bebo_products_box {
   margin-top: 3.5%;
@@ -174,7 +174,8 @@
   margin-bottom: 0;
 }
 .rating_upper_margin {
-  margin-top: -3%;
+  margin-top: -2%;
+  margin-bottom: 2%;
 }
 .product_hr {
   width: 95%;
