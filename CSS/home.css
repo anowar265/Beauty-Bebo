@@ -1021,3 +1021,54 @@ a {
   color: #757575;
   font-weight: normal;
 }
+#reg {
+  cursor: pointer;
+}
+
+.updated_menu {
+  position: absolute;
+  top: 170px;
+  right: 160px;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  background: white;
+  width: 130px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  color: #616161;
+  visibility: hidden;
+  opacity: 0;
+}
+.updated_menu > p a {
+  font-size: 14px;
+  text-align: center;
+  color: #424242;
+}
+.updated_menu > p {
+  color: grey;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+}
+.updated_menu > p > a:hover {
+  color: #bf0077;
+}
+.updated_menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+.updated_menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+}
+.updated_menu hr {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #fafafa;
+}

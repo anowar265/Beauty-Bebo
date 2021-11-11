@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create New Customer Account Beauty Bebo</title>
+    <title>Products</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/sigin.css" />
+    <link rel="stylesheet" href="../css/search_products.css" />
   </head>
   <body>
     <div class="header-container">
@@ -81,6 +81,17 @@
                   <p><a href="sigin.html">Login</a></p>
                   <hr />
                   <p><a href="signup.html">Register</a></p>
+                </div>
+                <div class="updated_menu">
+                  <p><a href="sigin.html">My Account</a></p>
+                  <hr />
+                  <p><a href="sigin.html">My Orders</a></p>
+                  <hr />
+                  <p><a href="sigin.html"> Wishlist</a></p>
+                  <hr />
+                  <p><a href="sigin.html">Address Book</a></p>
+                  <hr />
+                  <p><a href="signup.html">Logout </a></p>
                 </div>
               </span>
             </div>
@@ -533,49 +544,88 @@
         </div>
       </div>
     </div>
-    <div class="sigin_main_container">
-      <p class="para_sign">CUSTOMER Login</p>
-      <div class="sigin_outter_box">
-        <div>
-          <div class="legend">
-            <h1>REGISTERED CUSTOMERS</h1>
-            <hr />
-          </div>
-          <p class="sigin_text_block">
-            If you have an account, sign in with your email address.
-          </p>
-          <form id="sigin_form">
-            <div class="validate">
-              <h1>Email<span>*</span></h1>
-              <input id="user_email" type="email" value="" name="Email" />
+    <div id="bebo_all_products">
+      <div class="bebo_products">
+        <div class="bebo_products_category">
+          <div class="bebo_products_category_box">
+            <p>category</p>
+            <div id="adding-sign">
+              <span class="material-icons-outlined add_color"> add </span>
             </div>
-            <div class="validate">
-              <h1>Password<span>*</span></h1>
-              <input
-                id="user_password"
-                type="password"
-                value=""
-                name="Password"
-              />
-              <div class="validate">
-                <button id="login_sigin_btn" onclick="sigin(event)">SIGN IN</button>
-              </div>
-          </form>
+            <hr />
+            <ul>
+              <li>
+                shop by
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+              <li>
+                skin type
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+              <li>
+                color
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+              <li>
+                price
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+              <li>
+                brand
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+              <li>
+                shades
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+              <li>
+                formulation
+                <div>
+                  <span class="material-icons-outlined add_color"> add </span>
+                </div>
+                <hr />
+              </li>
+            </ul>
+          </div>
+          <div class="bebo_products_category_img_box">
+            <img src="https://www.beautybebo.com/pub/media/free-delivery.jpg" />
+          </div>
+        </div>
+        <div class="bebo_products_list">
+          <div>
+            <div class="sorting_menu">
+              <span>Sort:</span>
+              <select id="ProductSort" onchange="sortpricehandle()">
+                <option value="">Position</option>
+                <option value="pname">Product Name</option>
+                <option value="low">Price : Low To High</option>
+                <option value="high">Price : High To Low</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+          <div id="show-the-bebo-products"></div>
         </div>
       </div>
-      <div> <div class="legend">
-        <h1>NEW CUSTOMERS</h1>
-        <hr />
-      </div>
-      <p class="sigin_text_block">
-        Creating an account has many benefits: check out faster, keep more than one address, track orders and more.
-      </p>
-      <div class="validate">
-        <button id="create_account_btn"><a href="signup.html">CREATE AN ACCOUNT</a></button>
-      </div></div>
     </div>
-
-    <!-- jkhvdkvhiobvi -->
     <div class="container">
       <div class="footer-top">
         <div class="row">
@@ -709,5 +759,7 @@
     <div id="bottom_tag_title">© 2020 All Rights Reserved.</div>
   </body>
 </html>
+
 <script src="../JS/home.js"></script>
-<script src="../JS/sigin.js"></script>
+<script src="../JS/data.js"></script>
+<script src="../JS/search_products.js"></script>

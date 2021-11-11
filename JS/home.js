@@ -4,10 +4,10 @@ let images = [
   "https://www.beautybebo.com/pub/media/ads/mamaearth_diwali.png",
 ];
 
-var parent = document.getElementById("home_slide_show");
+let parent = document.getElementById("home_slide_show");
 function startslideshow() {
   let counter = 0;
-  var img = document.createElement("img");
+  let img = document.createElement("img");
   img.src = images[counter];
   img.setAttribute("class", "slide_img");
   parent.append(img);
@@ -39,11 +39,37 @@ readMoreBtn.addEventListener("click", function (e) {
     readMoreBtn.innerText = "Read More";
   }
 });
+let reg = document.getElementById("reg");
+let reg_name = reg.innerHTML;
+console.log(reg_name);
 
-function menuToggle() {
-  const toggleMenu = document.querySelector(".menu");
-  toggleMenu.classList.toggle("active");
+if (
+  localStorage.getItem("fname") !== null &&
+  JSON.parse(localStorage.getItem("fanme") !== "")
+) {
+  // let reg = document.getElementById("reg");
+  reg_name = JSON.parse(localStorage.getItem("fname"));
+  reg.innerHTML = reg_name;
 }
+console.log(reg_name);
+if (reg_name == " My Account ") {
+  console.log("here");
+  function menuToggle() {
+    let toggleMenu = document.querySelector(".menu");
+    toggleMenu.classList.toggle("active");
+  }
+} else {
+  console.log("there");
+  function menuToggle() {
+    let toggleUpdatedMenu = document.querySelector(".updated_menu");
+    toggleUpdatedMenu.classList.toggle("active");
+  }
+}
+
+// function menuToggle() {
+//   const toggleMenu = document.querySelector(".menu");
+//   toggleMenu.classList.toggle("active");
+// }
 
 function navToggle() {
   const toggleNav = document.querySelector(".navigation_bar");
@@ -112,4 +138,17 @@ function navFragranceToggle() {
 function navFragranceTogglenot() {
   const toggleAyue = document.querySelector(".navigation_bar_fragrance");
   toggleAyue.classList.toggle("active");
+}
+
+let search_btn = document.getElementById("search-btn");
+let search = document.getElementById("searchbar");
+
+search_btn.addEventListener("click", function () {
+  goto_search_page(search);
+});
+
+function goto_search_page(str) {
+  localStorage.setItem("search", JSON.stringify(str.value));
+
+  window.location.href = "search_products.html";
 }

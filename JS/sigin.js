@@ -23,3 +23,8 @@ function sigin(e) {
   users_email.value = "";
   users_password.value = "";
 }
+
+function menuToggle() {
+  let toggleMenu = document.querySelector(".menu");
+  toggleMenu.classList.toggle("active");
+}
