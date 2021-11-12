@@ -1,0 +1,51 @@
+div {
+  border: 1px solid gainsboro;
+}
+#cart_container {
+  width: 100%;
+  margin: auto;
+  height: 700px;
+}
+#cart_container > p {
+  width: 83%;
+  text-align: left;
+  font-size: 18px;
+  padding: 5px;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  color: #444;
+}
+.cart_container_box {
+  width: 86%;
+  margin: auto;
+  display: flex;
+}
+.cart_container_box > div:nth-child(1) {
+  flex-basis: 65%;
+  margin: auto;
+  height: 100px;
+}
+.cart_container_box > div:nth-child(2) {
+  flex-basis: 30%;
+  margin: auto;
+}
+.cart_table > ul > li {
+  font-size: 13px;
+  color: #757575;
+  font-weight: bold;
+  border: 1px solid red;
+}
+.cart_table > ul > li:nth-child(1) {
+  width: 25%;
+}
+.cart_table > ul > li:nth-child(2) {
+  width: 45%;
+}
+.cart_table > ul > li:nth-child(3),
+.cart_table > ul > li:nth-child(4),
+.cart_table > ul > li:nth-child(5) {
+  width: 10%;
+  text-align: center;
+}

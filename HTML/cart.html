@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/search_products.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
   </head>
   <body>
     <div class="header-container">
@@ -536,96 +536,27 @@
         <div class="my_cart">
           <ul class="active">
             <li>
-              <a href="cart.html" style="outline: none"
-                ><span class="material-icons-outlined expand cart_expand">
-                  shopping_bag </span
-                >MY CART</a
-              >
+              <span class="material-icons-outlined expand cart_expand">
+                shopping_bag </span
+              >MY CART
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="bebo_all_products">
-      <div class="bebo_products">
-        <div class="bebo_products_category">
-          <div class="bebo_products_category_box">
-            <p>category</p>
-            <div id="adding-sign">
-              <span class="material-icons-outlined add_color"> add </span>
-            </div>
-            <hr />
-            <ul>
-              <li>
-                shop by
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-              <li>
-                skin type
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-              <li>
-                color
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-              <li>
-                price
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-              <li>
-                brand
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-              <li>
-                shades
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-              <li>
-                formulation
-                <div>
-                  <span class="material-icons-outlined add_color"> add </span>
-                </div>
-                <hr />
-              </li>
-            </ul>
-          </div>
-          <div class="bebo_products_category_img_box">
-            <img src="https://www.beautybebo.com/pub/media/free-delivery.jpg" />
-          </div>
+    <div id="cart_container">
+      <p>shoping cart</p>
+      <div class="cart_container_box">
+        <div class="cart_table">
+          <ul>
+            <li class="cart_item_img">ITEM</li>
+            <li class="cart_name"></li>
+            <li class="cart_price">PRICE</li>
+            <li class="cart_quantity">QTY</li>
+            <li class="caer_sub_total">SUBTOTAL</li>
+          </ul>
         </div>
-        <div class="bebo_products_list">
-          <div>
-            <div class="sorting_menu">
-              <span>Sort:</span>
-              <select id="ProductSort" onchange="sortpricehandle()">
-                <option value="">Position</option>
-                <option value="pname">Product Name</option>
-                <option value="low">Price : Low To High</option>
-                <option value="high">Price : High To Low</option>
-              </select>
-            </div>
-          </div>
-          <hr />
-          <div id="show-the-bebo-products"></div>
-        </div>
+        <div></div>
       </div>
     </div>
     <div class="container">
@@ -763,5 +694,4 @@
 </html>
 
 <script src="../JS/home.js"></script>
-<script src="../JS/data.js"></script>
-<script src="../JS/search_products.js"></script>
+<script src="../JS/cart.js"></script>
