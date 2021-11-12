@@ -2,7 +2,7 @@
 
 Construc Week Individual Project
 
-<img src="![Screenshot (243)](https://user-images.githubusercontent.com/91547105/141511587-9f8c0f08-1f5e-47c7-af81-bf70200a43e9.png)
+<img src="https://user-images.githubusercontent.com/91547105/141511587-9f8c0f08-1f5e-47c7-af81-bf70200a43e9.png
 ">
 
 > This is our first construct week project at Masai-School in which we have created a clone of <a href="https://www.beautybebo.com/">India Mart</a> .
