@@ -1,10 +1,3 @@
 # Beauty-Bebo - clone
- Construc Week Individual Project
-	
 
-
-
-
-
-
-
+Construc Week Individual Project
