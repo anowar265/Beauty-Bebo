@@ -85,15 +85,15 @@
                   <p><a href="signup.html">Register</a></p>
                 </div>
                 <div class="updated_menu">
-                  <p><a href="sigin.html">My Account</a></p>
+                  <p><a href="home.html">My Account</a></p>
                   <hr />
-                  <p><a href="sigin.html">My Orders</a></p>
+                  <p><a href="cart.html">My Orders</a></p>
                   <hr />
-                  <p><a href="sigin.html"> Wishlist</a></p>
+                  <p><a href="wish.html"> Wishlist</a></p>
                   <hr />
-                  <p><a href="sigin.html">Address Book</a></p>
+                  <p><a href="address.html">Address Book</a></p>
                   <hr />
-                  <p><a href="signup.html">Logout </a></p>
+                  <p><a onclick="signout()">Logout </a></p>
                 </div>
               </span>
             </div>
@@ -111,7 +111,7 @@
               <span class="hove"
                 ><span id="show_hover_affect">
                   <span
-                    ><a>MAKEUP</a>
+                    ><a href="search_products.html">MAKEUP</a>
                     <span class="material-icons-outlined expand">
                       expand_more
                     </span></span
@@ -538,9 +538,11 @@
         <div class="my_cart">
           <ul class="active">
             <li>
-              <span class="material-icons-outlined expand cart_expand">
-                shopping_bag </span
-              >MY CART
+              <a href="cart.html" style="outline: none"
+                ><span class="material-icons-outlined expand cart_expand">
+                  shopping_bag </span
+                >MY CART</a
+              >
             </li>
           </ul>
         </div>

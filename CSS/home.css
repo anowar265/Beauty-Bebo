@@ -165,6 +165,9 @@ li {
   margin: 0 2px;
   cursor: pointer;
 }
+li > a {
+  color: white;
+}
 .active,
 .menu_bar ul li:hover {
   background-color: #bf0077;
@@ -1071,4 +1074,8 @@ a {
   margin: 0;
   padding: 0;
   border: 1px solid #fafafa;
+}
+a {
+  color: white;
+  cursor: pointer;
 }

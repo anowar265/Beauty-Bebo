@@ -1,9 +1,34 @@
-function menuToggle() {
-  let toggleMenu = document.querySelector(".menu");
-  toggleMenu.classList.toggle("active");
-}
-
+// function menuToggle() {
+//   let toggleMenu = document.querySelector(".menu");
+//   toggleMenu.classList.toggle("active");
+// }
+let reg1 = document.getElementById("reg");
+let reg1_name = reg1.innerHTML;
+console.log(reg1_name);
 let parent1 = document.getElementById("show-the-bebo-products");
+
+if (
+  localStorage.getItem("fname") !== null &&
+  JSON.parse(localStorage.getItem("fanme") !== "")
+) {
+  // let reg = document.getElementById("reg");
+  reg1_name = JSON.parse(localStorage.getItem("fname"));
+  reg1.innerHTML = reg1_name;
+}
+console.log(reg1_name);
+if (reg1_name == " My Account ") {
+  console.log("here");
+  function menuToggle() {
+    let toggleMenu = document.querySelector(".menu");
+    toggleMenu.classList.toggle("active");
+  }
+} else {
+  console.log("there");
+  function menuToggle() {
+    let toggleUpdatedMenu = document.querySelector(".updated_menu");
+    toggleUpdatedMenu.classList.toggle("active");
+  }
+}
 
 function showProducts() {
   product_data.forEach(function (product) {
@@ -28,11 +53,11 @@ function showProducts() {
     product_price.setAttribute("class", "price_promo ");
     let priceMain = document.createElement("span");
     priceMain.setAttribute("class", "main_price");
-    priceMain.textContent = product.mainPrice;
+    priceMain.textContent = "₹" + product.mainPrice;
 
     let priceDiscount = document.createElement("span");
     priceDiscount.setAttribute("class", "discount_price");
-    priceDiscount.textContent = product.discountPrice;
+    priceDiscount.textContent = "₹" + product.discountPrice;
 
     let priceAval = document.createElement("span");
     priceAval.setAttribute("class", "discount_avality");
@@ -148,4 +173,15 @@ function addtoCart(p) {
   //products_cart.push(p);
   localStorage.setItem("bebo_cart", JSON.stringify(bebo_products_cart));
   //console.log("products_cart:", products_cart);
+}
+
+function signout() {
+  //console.log("sign");
+  let fname = JSON.parse(localStorage.getItem("fname"));
+
+  fname = " My Account ";
+
+  localStorage.setItem("fname", JSON.stringify(fname));
+
+  window.location.href = "home.html";
 }
