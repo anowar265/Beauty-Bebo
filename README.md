@@ -52,7 +52,7 @@ You can also run the project live using <a href="https://github.com/anowar265/Be
 
 #### Signup Page:
 
-<img src="![Screenshot (244)](https://user-images.githubusercontent.com/91547105/141512609-d4c152a1-9ce0-4295-ace1-9fe3ea8dae03.png)"/>
+<img src="https://user-images.githubusercontent.com/91547105/141512609-d4c152a1-9ce0-4295-ace1-9fe3ea8dae03.png"/>
 
 #### Login Page:
 
