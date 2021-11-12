@@ -1075,3 +1075,7 @@ a {
   padding: 0;
   border: 1px solid #fafafa;
 }
+a {
+  color: white;
+  cursor: pointer;
+}

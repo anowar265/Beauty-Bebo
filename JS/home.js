@@ -30,7 +30,7 @@ startslideshow();
 
 let readMoreBtn = document.querySelector(".read-more-btn");
 let text = document.querySelector(".text");
-console.log(readMoreBtn.textContent);
+//console.log(readMoreBtn.textContent);
 readMoreBtn.addEventListener("click", function (e) {
   text.classList.toggle("show_more");
   if (readMoreBtn.innerText === "Read More") {
@@ -41,7 +41,7 @@ readMoreBtn.addEventListener("click", function (e) {
 });
 let reg = document.getElementById("reg");
 let reg_name = reg.innerHTML;
-console.log(reg_name);
+//console.log(reg_name);
 
 if (
   localStorage.getItem("fname") !== null &&
@@ -53,13 +53,13 @@ if (
 }
 console.log(reg_name);
 if (reg_name == " My Account ") {
-  console.log("here");
+  //console.log("here");
   function menuToggle() {
     let toggleMenu = document.querySelector(".menu");
     toggleMenu.classList.toggle("active");
   }
 } else {
-  console.log("there");
+  //console.log("there");
   function menuToggle() {
     let toggleUpdatedMenu = document.querySelector(".updated_menu");
     toggleUpdatedMenu.classList.toggle("active");
@@ -151,4 +151,15 @@ function goto_search_page(str) {
   localStorage.setItem("search", JSON.stringify(str.value));
 
   window.location.href = "search_products.html";
+}
+
+function signout() {
+  //console.log("sign");
+  let fname = JSON.parse(localStorage.getItem("fname"));
+
+  fname = " My Account ";
+
+  localStorage.setItem("fname", JSON.stringify(fname));
+
+  window.location.href = "home.html";
 }

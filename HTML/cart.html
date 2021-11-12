@@ -548,7 +548,7 @@
       <p>shoping cart</p>
       <div class="cart_container_box">
         <div class="cart_table">
-          <ul>
+          <ul class="cart_ul">
             <li class="cart_item_img">ITEM</li>
             <li class="cart_name"></li>
             <li class="cart_price">PRICE</li>
@@ -556,7 +556,39 @@
             <li class="caer_sub_total">SUBTOTAL</li>
           </ul>
         </div>
-        <div></div>
+        <div class="cart_payment_box">
+          <div class="cart_description_box">
+            <h2>summary</h2>
+            <select class="estimate">
+              <option>ESTIMATE SHIPPING AND TAX</option>
+            </select>
+            <hr />
+            <div class="cart_flex_box">
+              <div>TOTAL PRICE</div>
+              <div class="cart_total_price"></div>
+            </div>
+            <hr />
+            <div class="cart_flex_box">
+              <div>Shipping (Best Way - Max 7 Business days)</div>
+              <div class="cart_total_price">₹0.00</div>
+            </div>
+            <hr />
+            <div class="cart_flex_box">
+              <div>Order Total Incl. GST</div>
+              <div class="cart_total_price_gst"></div>
+            </div>
+            <hr />
+            <select class="estimate1">
+              <option>APPLY DISCOUNT CODE</option>
+            </select>
+          </div>
+          <hr />
+          <div class="caer_checkout_box">
+            <a href="payment.html"
+              ><button class="proceed_to_check">proceed to checkout</button></a
+            >
+          </div>
+        </div>
       </div>
     </div>
     <div class="container">
