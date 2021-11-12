@@ -55,7 +55,7 @@ You can also run the project live using <a href="https://github.com/anowar265/Be
 
 #### Login Page:
 
-<img src="https://user-images.githubusercontent.com/16943997/138561232-9f947515-b14a-4365-bce1-bd88e48e2b7d.png" />
+<img src="https://user-images.githubusercontent.com/91547105/141523597-cb509545-9ac7-4300-8092-598a01d613c3.png" />
 
 #### Home Page:
 
@@ -63,11 +63,11 @@ You can also run the project live using <a href="https://github.com/anowar265/Be
 
 #### Search Products Page:
 
-<img src="https://user-images.githubusercontent.com/16943997/138561262-31790170-c388-4ede-97b7-3dae89085c0d.png" />
+<img src="https://user-images.githubusercontent.com/91547105/141523806-fa30953b-3d71-4817-a3b3-c7b2db650431.png" />
 
 #### Product Cart Page:
 
-<img src = "https://user-images.githubusercontent.com/16943997/138561528-fe3030e7-9f2c-41f6-8764-14fc0a1b44c0.png" />
+<img src = "https://user-images.githubusercontent.com/91547105/141523870-cf2ea072-1da1-40fa-9971-0c9fc6d60d22.png" />
 
 #### Payment Page:
 
