@@ -59,19 +59,11 @@ You can also run the project live using <a href="https://github.com/anowar265/Be
 
 #### Home Page:
 
-<img src="![Screenshot (243)](https://user-images.githubusercontent.com/91547105/141511587-9f8c0f08-1f5e-47c7-af81-bf70200a43e9.png)" />
+<img src="https://user-images.githubusercontent.com/91547105/141511587-9f8c0f08-1f5e-47c7-af81-bf70200a43e9.png" />
 
 #### Search Products Page:
 
 <img src="https://user-images.githubusercontent.com/16943997/138561262-31790170-c388-4ede-97b7-3dae89085c0d.png" />
-
-#### Product discription Page:
-
-<img src="https://user-images.githubusercontent.com/16943997/138561281-ef6c1fbb-c59f-4782-9cd9-cf34068756e4.png" />
-
-#### Product buying details Page:
-
-<img src="https://user-images.githubusercontent.com/16943997/138561487-cc9f18fb-2dfb-4cc6-a786-a99b0c6458c7.png" />
 
 #### Product Cart Page:
 
