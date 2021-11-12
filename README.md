@@ -57,6 +57,10 @@ You can also run the project live using <a href="https://github.com/anowar265/Be
 
 <img src="https://user-images.githubusercontent.com/91547105/141523597-cb509545-9ac7-4300-8092-598a01d613c3.png" />
 
+#### Home Page:
+
+<img src="https://user-images.githubusercontent.com/91547105/141511587-9f8c0f08-1f5e-47c7-af81-bf70200a43e9.png" />
+
 <hr/>
 
 ## Team Members and Contributors:
