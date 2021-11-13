@@ -21,7 +21,7 @@ Construc Week Individual Project
 
 CLone down this repository using this <a href="https://github.com/anowar265/Beauty-Bebo">link</a> and open index.html file.
 
-You can also run the project live using <a href="https://github.com/anowar265/Beauty-Bebo">IndiaMart</a> link.
+You can also run the project live using <a href="https://github.com/anowar265/Beauty-Bebo">Beauty Bebo</a> link.
 
 <hr>
 
