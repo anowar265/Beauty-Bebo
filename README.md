@@ -84,8 +84,9 @@ You can also run the project live using <a href="https://github.com/anowar265/Be
 - **Email** : anowar3042@gmail.com
 - **LinkedIn** : https://www.linkedin.com/in/hossainanowaroffical/
 
+<hr/>
 
-### Blog post link :
+## Blog post link :
 
 - **Medium** : https://medium.com/@anowar3042/clone-visual-of-com-getting-started-as-a-web-developer-296029eb1e98
 
